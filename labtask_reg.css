@@ -1,0 +1,374 @@
+/* =========================
+   ROOT VARIABLES
+========================= */
+
+:root {
+    --primary: #ff0000;
+    --primary-dark: #cc0000;
+    --text: #222222;
+    --border: #999999;
+    --background: #eeeeee;
+    --white: #ffffff;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    margin: 0;
+    padding: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: var(--background);
+
+    color: var(--text);
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    width: 850px;
+
+    margin: 0 auto;
+
+    background-color: var(--white);
+
+    border: 1px solid #777;
+
+    padding: 10px 20px 20px 20px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   TOP INFORMATION
+========================= */
+
+.required-info {
+    margin: 0 0 8px 0;
+}
+
+.required-info span {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.steps {
+    margin: 5px 0 15px 0;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+h2 {
+    color: var(--primary);
+
+    font-size: 17px;
+
+    margin: 8px 0 5px 0;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.description {
+    margin: 0 0 10px 0;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   FORM ROW
+========================= */
+
+.form-row {
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 4px;
+
+    min-height: 24px;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.form-row > label {
+    width: 250px;
+
+    text-align: right;
+
+    margin-right: 8px;
+
+    font-weight: bold;
+
+    font-size: 13px;
+}
+
+.form-row label span {
+    color: var(--primary);
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 280px;
+
+    height: 20px;
+
+    border: 1px solid #999;
+
+    padding: 2px 5px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   SELECT
+========================= */
+
+select {
+    width: 280px;
+
+    height: 22px;
+
+    border: 1px solid #999;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   RADIO GROUP
+========================= */
+
+.radio-group {
+    display: flex;
+
+    align-items: center;
+
+    gap: 3px;
+}
+
+.radio-group label {
+    margin-right: 8px;
+
+    font-weight: normal;
+
+    width: auto;
+}
+
+
+/* =========================
+   RADIO COLUMN
+========================= */
+
+.radio-column {
+    text-align: left;
+}
+
+.radio-column label {
+    font-weight: normal;
+
+    margin-left: 3px;
+}
+
+
+/* =========================
+   CHECKBOX
+========================= */
+
+.checkbox-group {
+    display: flex;
+
+    align-items: center;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+
+    margin-left: 5px;
+}
+
+
+/* =========================
+   SMALL INPUT
+========================= */
+
+.small-input {
+    width: 60px !important;
+
+    margin-right: 5px;
+}
+
+.form-row > span {
+    margin-right: 5px;
+}
+
+
+/* =========================
+   ADDITIONAL CHECKBOX ROW
+========================= */
+
+.check-row {
+    margin: 5px 0 5px 250px;
+
+    display: flex;
+
+    align-items: flex-start;
+}
+
+.check-row input {
+    margin-top: 2px;
+
+    margin-right: 6px;
+}
+
+.check-row label {
+    font-weight: normal;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   COMMENTS
+========================= */
+
+.comments-row {
+    display: flex;
+
+    align-items: flex-start;
+
+    margin-top: 10px;
+}
+
+.comments-row > label {
+    width: 250px;
+
+    text-align: right;
+
+    margin-right: 8px;
+
+    font-weight: bold;
+}
+
+.comments-row small {
+    display: block;
+
+    font-weight: normal;
+
+    font-size: 10px;
+}
+
+textarea {
+    width: 280px;
+
+    height: 65px;
+
+    resize: both;
+
+    border: 1px solid #999;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   CONTACT CHECKBOX
+========================= */
+
+.check-column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.check-column label {
+    font-weight: normal;
+
+    margin-left: 4px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+    text-align: center;
+
+    margin-top: 15px;
+
+    padding-top: 5px;
+
+    border-top: 1px solid #eeeeee;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 2px 12px;
+
+    margin: 0 3px;
+
+    font-size: 12px;
+
+    border: 1px solid #888;
+
+    border-radius: 8px;
+
+    background: linear-gradient(#ffffff, #dddddd);
+
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background: #cccccc;
+}
+
+
+/* =========================
+   BOTTOM TEXT
+========================= */
+
+.security {
+    margin-top: 15px;
+
+    font-size: 12px;
+}
+
+.support {
+    font-size: 12px;
+
+    color: #555;
+}
